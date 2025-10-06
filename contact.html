@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+   
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+<title> PASTEECORP </title>
+
+<style>
+  .contai {
+    width: 1000px;           
+    margin: 20px auto;         
+    border: 2px solid black;   
+    border-radius: 10px;     
+    background:rgba(255, 255, 255, 0.7);     
+    text-align: center;      
+    font-family: 'Pixelify Sans', sans-serif; 
+  }
+   body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images6.alphacoders.com/126/1268195.png');
+            background-size: cover;          /* makes image cover entire page */
+            background-position: center;     /* centers the image */
+            background-repeat: no-repeat;    /* no tiling */
+            background-attachment: fixed;    /* makes background static */
+            font-family: 'Pixelify Sans', sans-serif;
+   }
+</style>
+
+
+</head>
+
+<nav style="background-color: black; padding: 20px;">
+    <ul style="list-style: none; margin: 0; padding: 0; display: flex;">
+        <li style="margin-right: 30px;"><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li style="margin-right: 30px;"><a href="products.html" style="color: white; text-decoration: none;">Products</a></li>
+       
+        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact us!</a></li>
+    </ul>
+</nav>
+
+<br>
+<br>
+<body> 
+<div class="contai"> <br><br>
+   <h1 style="font-size: 100px;"> Contact Us!</h1> <br><br>
+   <div style="display:flex; justify-content:center; gap:20px;">
+  <div style="width:300px; height:100px; background:#ddd; text-align:center;">
+     <h1 style="font-size: 27px;">LOCATION: </h1> <h2 id="loc" style="font-size: 20px;"></h2></div>
+  <div style="width:300px; height:100px; background:#ccc; text-align:center;">
+      <h1 style="font-size: 27px;">PHONE NUMBER: </h1> <h2 id="number" style="font-size: 20px;"></h2>
+
+  </div>
+  <div style="width:300px; height:100px; background:#bbb; text-align:center;">
+      <h1 style="font-size: 27px;">EMAIL ADDRESS: </h1> <h2 id="email" style="font-size: 20px;"></h2>
+  </div>
+
+
+  <BR>
+
+    <BR><BR>
+</div>
+<br>
+   <footer> 
+
+    <p id="store_hours"> </p>
+
+    </footer>
+<py-script src="contact.py"></py-script>
+
+<BR>
+</body>
